@@ -8,16 +8,15 @@
 
 // start of program
 
-let dbname,arr=[];
-export async function get_data(dbname, arr){
+async function get_data(dbname, arr){
     let r = "select "+commas(arr)+" from "+dbname+" ;"
     return r;
 }
 
 function commas(arr){
     let s = "";
-    array.forEach(ele => {
-        s = s + ele + " , "
+    arr.forEach(ele => {
+        s = s + ele + ", "
     });
     s=s.substring(0,s.length-2);
     return s;
