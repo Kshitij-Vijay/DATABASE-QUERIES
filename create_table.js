@@ -13,7 +13,7 @@ export async function create_table(dbname,column,type){
     for(var i=0;i<column.length;i++){
         r = r + column[i] + " " + type[i] + " , ";
     }
-    r = r.substring(r.length - 2, r.length) + " );";
+    r = r.substring(0,r.length-2) + " );";
     return r;
 }
 

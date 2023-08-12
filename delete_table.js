@@ -7,7 +7,7 @@
 
 // start of program
 
-function drop_table (dbname){
+function delete_table (dbname){
     let s = "delete from "+dbname+" ;";
     return s;
 }

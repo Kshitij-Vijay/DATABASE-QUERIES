@@ -13,7 +13,7 @@ function select_distinct(dbname,arr){
     arr.forEach(ele => {
         s = s + ele + " , ";
     });
-    s = s.substring(s.length-2,s.length) + " from "+dbname+" ;";
+    s = s.substring(0,s.length-2) + " from "+dbname+" ;";
     return s;
 }
 

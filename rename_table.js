@@ -8,7 +8,7 @@
 // start of program
 
 function rename_table (dbname, newname){
-    let s = "alter table "+dbname+" rename column "+dbname+" to "+newname+" ;";
+    let s = "alter table "+dbname+" rename "+dbname+" to "+newname+" ;";
     return s;
 }
 
