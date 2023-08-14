@@ -1,0 +1,8 @@
+/*
+
+    This method returns a string which is the query for SQL.
+
+    The input for this method is the name of the table. It returns a query which when excecuted will give out all the rows of the table.
+
+*/
+
